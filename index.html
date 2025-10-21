@@ -1,234 +1,68 @@
 <!-- <p> Test for my personal website. </p> -->
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shuo Huang — Researcher</title>
-  <meta name="description" content="Shuo Huang — Ph.D. candidate in Biomedical Engineering at USC. Neuroimaging, nanophotonics inverse design, and multimodal Alzheimer's analysis." />
-  <meta property="og:title" content="Shuo Huang — Researcher" />
-  <meta property="og:description" content="Neuroimaging • Nanophotonics • Multimodal AD" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/cover.png" />
-  <meta name="theme-color" content="#0ea5e9" />
+  <title>Shuo Huang — Curriculum Vitae</title>
+  <meta name="description" content="Shuo Huang — Ph.D. candidate in Biomedical Engineering at USC. Expertise in neuroimaging, nanophotonics inverse design, and multimodal Alzheimer's disease analysis." />
   <link rel="icon" href="assets/favicon.png" />
   <style>
-    :root{
-      --bg:#0b0f14; --muted:#101720; --card:#0f1520; --text:#e6edf3; --t2:#9db4c0; --brand:#0ea5e9; --brand-2:#38bdf8; --accent:#22c55e;
-      --shadow: 0 8px 30px rgba(2,13,23,.35);
-      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --sans: Inter, ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{margin:0;background:linear-gradient(180deg, var(--bg), #0c1117 35%, #0a0f14 100%);color:var(--text);font:400 16px/1.6 var(--sans)}
-    a{color:var(--brand);text-decoration:none}
+    body{font-family:Inter,Arial,sans-serif;margin:0;background:#0b0f14;color:#e6edf3;line-height:1.6}
+    main{max-width:900px;margin:auto;padding:40px 20px}
+    h1{font-size:40px;margin-bottom:6px}
+    h2{font-size:22px;margin-top:30px;border-bottom:1px solid #1e293b;padding-bottom:4px}
+    a{color:#38bdf8;text-decoration:none}
     a:hover{text-decoration:underline}
-    header{position:sticky;top:0;background:rgba(12,17,23,.6);backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid #111820;z-index:50}
-    .nav{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
-    .nav a.brand{font-weight:700;letter-spacing:.3px}
-    .nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
-    .btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#021018;border:0;font-weight:600;border-radius:12px;padding:10px 14px;box-shadow:var(--shadow)}
-    .btn.ghost{background:transparent;color:var(--text);border:1px solid #1e293b}
-    .hero{max-width:1080px;margin:48px auto 0;padding:24px 20px 12px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
-    .hero h1{font-size:48px;line-height:1.1;margin:8px 0 10px}
-    .hero p.lead{font-size:18px;color:var(--t2);margin:0 0 18px}
-    .hero .card{background:radial-gradient(1200px 500px at -5% -10%, rgba(14,165,233,.2), transparent), linear-gradient(180deg, var(--card), #0a0f14);border:1px solid #162233;border-radius:18px;padding:18px 18px 8px;box-shadow:var(--shadow)}
-    .chips{display:flex;flex-wrap:wrap;gap:10px}
-    .chip{border:1px solid #1f2a37;background:#0b121a;border-radius:999px;padding:6px 12px;font-size:13px;color:#b9c6d2}
-    section{max-width:1080px;margin:28px auto;padding:18px 20px}
-    h2{font-size:24px;margin:6px 0 12px}
-    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
-    .card{background:linear-gradient(180deg, var(--card), #0b0f14);border:1px solid #172332;border-radius:16px;padding:16px}
-    .proj{grid-column:span 6}
-    .pub{grid-column:span 12}
-    .pub li{margin:10px 0}
-    .badge{font-size:12px;color:#a5f3fc;background:#082f49;border:1px solid #0b3d5f;border-radius:999px;padding:2px 8px;margin-left:8px}
-    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .footer{margin:36px 0 24px;color:#8aa3b4;text-align:center;font-size:14px}
-    .kpi{display:flex;gap:14px;flex-wrap:wrap;margin:10px 0}
-    .kpi .pill{border:1px dashed #1f2f44;border-radius:12px;padding:6px 10px;color:#9bb6c8;font-size:13px}
-    .avatar{width:100%;aspect-ratio:1/1;border-radius:14px;background:linear-gradient(135deg,#0e7490,#155e75);display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:700;color:#031419;border:1px solid #134358}
-    .right .card{height:100%}
-    @media (max-width: 900px){
-      .hero{grid-template-columns:1fr}
-      .proj{grid-column:span 12}
-      .two-col{grid-template-columns:1fr}
-    }
+    .chip{display:inline-block;background:#111820;border:1px solid #1f2a37;border-radius:999px;padding:4px 10px;margin:3px 3px;font-size:13px;color:#b9c6d2}
+    footer{text-align:center;margin-top:40px;color:#9db4c0;font-size:14px}
   </style>
-  <script>
-    // Simple dark-mode toggle (persists to localStorage)
-    function toggleMode(){
-      const isDark = document.documentElement.dataset.theme === 'dark';
-      document.documentElement.dataset.theme = isDark ? 'light' : 'dark';
-      localStorage.setItem('theme', document.documentElement.dataset.theme);
-    }
-    (function(){
-      const saved = localStorage.getItem('theme');
-      if(saved) document.documentElement.dataset.theme = saved; else document.documentElement.dataset.theme = 'dark';
-    })();
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Shuo Huang",
-    "affiliation": {"@type":"CollegeOrUniversity","name":"University of Southern California"},
-    "jobTitle": "Ph.D. Candidate",
-    "url": "https://your-username.github.io/",
-    "sameAs": [
-      "https://scholar.google.com/", 
-      "https://github.com/your-username",
-      "https://orcid.org/"
-    ],
-    "knowsAbout": ["diffusion MRI","FODs","tractography","nanophotonics","inverse design","Alzheimer's disease","deep learning"]
-  }
-  </script>
 </head>
 <body>
-  <header>
-    <nav class="nav">
-      <a class="brand" href="#">Shuo Huang</a>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a class="btn ghost" href="assets/Shuo_Huang_CV.pdf" target="_blank">CV</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <main>
-    <section class="hero">
-      <div>
-        <span class="chip">Biomedical Engineering @ USC</span>
-        <h1>Neuroimaging × Nanophotonics × Multimodal AI</h1>
-        <p class="lead">I’m a Ph.D. candidate advised by Prof. Yonggang Shi, with collaborations across neuroimaging and inverse design. My work spans diffusion MRI (FODs, tractography), multimodal Alzheimer’s disease analysis, and energy‑efficient deep learning for metasurface design.</p>
-        <div class="chips" aria-label="Keywords">
-          <span class="chip">Diffusion MRI</span>
-          <span class="chip">FODs & SH</span>
-          <span class="chip">Tractography</span>
-          <span class="chip">Inverse Design</span>
-          <span class="chip">Metalenses</span>
-          <span class="chip">ADNI / HCP-Aging / UKB</span>
-          <span class="chip">ViTs & Contrastive Learning</span>
-        </div>
-        <div class="kpi">
-          <span class="pill">MICCAI 2025 Highlight</span>
-          <span class="pill">CLEO / ISBI papers</span>
-          <span class="pill">Open-source: Swin-UNETR / ALBEF / TabPFN pipelines</span>
-        </div>
-        <p>
-          <a class="btn" href="#projects">Explore Projects</a>
-          <a class="btn ghost" style="margin-left:8px" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
-        </p>
-      </div>
-      <div class="right">
-        <div class="card">
-          <div class="avatar" aria-hidden="true">SH</div>
-          <p style="margin:10px 0 0;color:#a6b8c6">Actively seeking collaborations and internships (Spring/Summer/Fall 2026) in ML for healthcare and computational photonics.</p>
-          <ul style="list-style:none;padding:0;margin:10px 0;color:#9db4c0">
-            <li>• Deep learning for diffusion MRI reconstruction & FOD restoration</li>
-            <li>• Multimodal AD: MRI, PET, clinical tabular data</li>
-            <li>• Nanophotonics inverse design (1D/2D metasurfaces)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <h1>Shuo Huang</h1>
+    <p>Ph.D. Candidate in Biomedical Engineering, University of Southern California</p>
+    <p><a href="mailto:shuo.huang@usc.edu">shuo.huang@usc.edu</a> · <a href="https://scholar.google.com/citations?user=j9dLH40AAAAJ">Google Scholar</a></p>
 
-    <section id="about" class="two-col">
-      <div class="card">
-        <h2>About</h2>
-        <p>Hi! I am <strong>Shuo Huang</strong>, a Ph.D. candidate in Biomedical Engineering at USC. I develop methods for <em>robust diffusion MRI</em> and <em>multimodal Alzheimer’s disease analysis</em>, and explore <em>inverse design</em> for nanophotonics. I enjoy building clean, reproducible pipelines and sharing open-source tools.</p>
-        <p>Interests: neuroimage reconstruction (FODs with SPHARM), tractography reliability, contrastive/self-supervised pretraining, and Fourier/PDE-inspired design for metasurfaces.</p>
-      </div>
-      <div class="card">
-        <h2>News</h2>
-        <ul style="margin:0 0 0 18px">
-          <li>Oct 2025 — MICCAI 2025 paper selected as <em>highlight</em>.</li>
-          <li>Sep 2025 — Released TabPFN multimodal pipeline repo.</li>
-          <li>Jun 2025 — CLEO submission on Fourier-based dimension expansion.</li>
-        </ul>
-      </div>
-    </section>
+    <h2>Education</h2>
+    <ul>
+      <li>2021-present Ph.D. in Biomedical Engineering, University of Southern California</li>
+      <li>2016-2017 M.Eng. in Electronic Engineering, University of Rennes 1, France</li>
+      <li>2011-1018 B.Eng. & M.Eng. in Biomedical Engineering, Southeast University, China</li>
+    </ul>
 
-    <section id="research">
-      <h2>Research</h2>
-      <div class="grid">
-        <article class="card proj">
-          <h3>FOD Restoration with Diffusion Models <span class="badge">dMRI</span></h3>
-          <p>Addressing susceptibility-induced distortions and signal loss in FODs represented in SPHARM. Proposed a diffusion-based restoration method that respects order dependencies and improves tractography consistency.</p>
-          <p><a href="#publications">Preprint / Code</a></p>
-        </article>
-        <article class="card proj">
-          <h3>Multimodal AD Diagnosis <span class="badge">MRI+PET+Tabular</span></h3>
-          <p>Integrating T1w MRI, PET, and cognitive scores via ViTs and TabPFN for data-efficient prediction, with region-level interpretability (SHAP) to highlight potential biomarkers.</p>
-          <p><a href="#publications">MICCAI 2025</a></p>
-        </article>
-        <article class="card proj">
-          <h3>Inverse Design for Metasurfaces <span class="badge">Photonics</span></h3>
-          <p>Fourier/PDE-inspired parameterization and energy-efficient training for metalenses and Y‑splitters; compares component-wise vs. whole-structure optimization in 1D/2D arrays.</p>
-          <p><a href="#publications">CLEO / ISBI</a></p>
-        </article>
-        <article class="card proj">
-          <h3>Open-Source Pipelines <span class="badge">Code</span></h3>
-          <p>Swin-UNETR, ALBEF, and TabPFN integrations for multimodal learning with clean configs, unit tests, and reproducible training scripts.</p>
-          <p><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></p>
-        </article>
-      </div>
-    </section>
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Algorithm Engineer</strong>, United Imaging Healthcare, Shanghai (2018–2021) — Developed multimodal medical image registration systems, GPU‑accelerated workflows, and filed 2 national patents.</li>
+      <li><strong>Teaching Assistant</strong>, USC (2024) — NIIN‑550: Computational Modeling in Neuroimaging.</li>
+      <li><strong>Reviewer</strong> for MICCAI 2024/2025 and journals.</li>
+    </ul>
 
-    <section id="publications" class="card">
-      <h2>Selected Publications</h2>
-      <ol class="pub">
-        <li><strong>Huang, S.</strong>, et al. <em>Diffusion Model for FOD Restoration in Susceptibility‑Corrupted dMRI</em>. MICCAI 2025 (Highlight). <a href="#">paper</a> · <a href="#">code</a></li>
-        <li><strong>Huang, S.</strong>, et al. <em>Multimodal AD Diagnosis with ViT + TabPFN + SHAP</em>. MICCAI 2025. <a href="#">paper</a> · <a href="#">code</a></li>
-        <li><strong>Huang, S.</strong>, et al. <em>Fourier‑based Dimension Expansion for Nanophotonics Inverse Design</em>. CLEO 2025. <a href="#">paper</a></li>
-        <li><strong>Huang, S.</strong>, et al. <em>FOD Autoencoder for Super‑Resolution</em>. ISBI 2025. <a href="#">paper</a></li>
-      </ol>
-    </section>
+    <h2>Research</h2>
+    <ul>
+      <li><strong>Multimodal Alzheimer’s Disease Diagnosis</strong> — Integrating MRI, PET, and tabular data using ViTs, ALBEF, and TabPFN; region‑level interpretability with SHAP.</li>
+      <li><strong>FOD Restoration with Diffusion Models</strong> — Spherical harmonic order‑aware generation for distortion correction and tractography stability.</li>
+      <li><strong>Nanophotonics Inverse Design</strong> — Fourier dimension expansion and adjoint optimization for metalenses and Y‑splitters.</li>
+    </ul>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="grid">
-        <div class="card proj">
-          <h3>FOD Super‑Resolution Toolkit</h3>
-          <p>SPHARM-aware networks with evaluation on HCP-Aging and UKB; includes distortion maps and tract-level QC.</p>
-          <p><a href="#">GitHub</a> · <a href="#">Docs</a></p>
-        </div>
-        <div class="card proj">
-          <h3>TabPFN Multimodal Wrapper</h3>
-          <p>Concise pipeline to merge tabular clinical features with vision embeddings for small-cohort AD tasks.</p>
-          <p><a href="#">GitHub</a></p>
-        </div>
-        <div class="card proj">
-          <h3>Metalens 1D/2D Design</h3>
-          <p>Comparison of atom-centric vs. global optimization; includes L‑BFGS closures and adjoint gradients.</p>
-          <p><a href="#">Preprint</a></p>
-        </div>
-        <div class="card proj">
-          <h3>Energy‑Efficient CNN Training</h3>
-          <p>ssProp‑inspired training strategies for reducing simulation cost in photonics inverse design.</p>
-          <p><a href="#">Paper</a></p>
-        </div>
-      </div>
-    </section>
+    <h2>Publications (Selected)</h2>
+    <ul>
+      <li>Huang S, et al. <em>FOD Restoration in Susceptibility‑Corrupted dMRI</em>. MICCAI 2025 (Highlight).</li>
+      <li>Huang S, et al. <em>Fourier‑Based Dimension Expansion for Nanophotonics Inverse Design</em>. CLEO 2025.</li>
+    </ul>
 
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:firstname.lastname@usc.edu">firstname.lastname@usc.edu</a></p>
-      <p>Scholar: <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a> · GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener">@your-username</a> · ORCID: <a href="https://orcid.org/" target="_blank" rel="noopener">link</a></p>
-    </section>
+    <h2>Awards & Honors</h2>
+    <ul>
+      <li>Outstanding Graduate of Southeast University</li>
+      <li>Multiple academic and merit scholarships (2012–2018)</li>
+    </ul>
 
-    <p class="footer">© <span id="y"></span> Shuo Huang — Built with vanilla HTML/CSS. <button class="btn ghost" onclick="toggleMode()" style="padding:4px 10px;margin-left:6px">Toggle theme</button></p>
+    <h2>Skills</h2>
+    <p>Python, PyTorch, TensorFlow, C/C++, MATLAB, LaTeX · Neuroimaging (dMRI/FODs), Multimodal Learning, Nanophotonics Design.</p>
+
+    <!-- <p><a class="chip" href="assets/Shuo_Huang_CV.pdf">Download Full CV (PDF)</a></p> -->
+    <footer>© <script>document.write(new Date().getFullYear())</script> Shuo Huang</footer>
   </main>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
 
